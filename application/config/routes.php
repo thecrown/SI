@@ -49,6 +49,25 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | Examples:	my-controller/index	-> my_controller/index
 |		my-controller/my-method	-> my_controller/my_method
 */
-$route['default_controller'] = 'welcome';
+$route['Tentang'] = 'Front/Tentang';
+$route['Pendaftaran'] = 'Front/Pendaftaran';
+$route['Login'] = 'Validation';
+$route['validation'] = 'Validation/login';
+$route['logout']='Validation/logout';
+$route['Daftar']='Validation/Daftar';
+$route['Admin'] = 'Admin_dashbord';
+$route['CalonPendaftar'] = 'Admin_dashbord/DaftarCalonPendaftar';
+$route['OrangtuaCalon']='Admin_dashbord/OrangtuaCalon';
+$route['PendidikanCalon']='Admin_dashbord/PendidikanCalon';
+$route['GantiPassword']='Admin_dashbord/GantiPassword';
+$route['password']='Admin_dashbord/verifpassword';
+$route['Username']='Admin_dashbord/verifusername';
+$route['Detail/(:num)']='Admin_dashbord/Detail/$1';
+$route['Acc/(:num)']='Admin_dashbord/Acc/$1';
+$route['Detail']='Admin_dashbord/Detail';
+$route['HasilSeleksi']='Admin_dashbord/HasilSeleksi';
+$route['default_controller'] = 'Front';
+$route['GantiUsername']='Admin_dashbord/GantiUsername';
+$route['print']='Admin_dashbord/CetakPDF';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
